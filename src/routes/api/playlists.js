@@ -2,6 +2,14 @@ const { Router } = require("express");
 
 const playlistsSongs = require("./playlistsSongs");
 
+const {
+  getPlaylists,
+  getPlaylist,
+  createPlaylist,
+  updatePlaylist,
+  deletePlaylist,
+} = require("../../controllers/api/playlists");
+
 const router = Router();
 
 router.get("/", getPlaylists);
